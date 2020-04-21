@@ -2,17 +2,21 @@ import pyautogui
 
 location = None
 position = input("Please enter the position you want: ")
+champion = input("Please enter the champion you want: ")
+if len(position) > 10 and len(champion) >10:
+    print("Please enter 10 word")
+    exit(1)
 
 while True:
 
-    # elise
+    # champion
     while True:
-        location = pyautogui.locateCenterOnScreen("images/elise_icon.png")
+        location = pyautogui.locateCenterOnScreen("images/champion/elise.png")
         if location is not None:
             break
     pyautogui.click(location)
 
-    # chat
+    # position
     while True:
         location = pyautogui.locateCenterOnScreen("images/chat_window.png")
         if location is not None:
