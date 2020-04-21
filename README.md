@@ -1,1 +1,1 @@
-# legue_of_legends_picker
+# lol_auto_picker
