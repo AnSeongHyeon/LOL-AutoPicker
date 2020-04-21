@@ -1,35 +1,29 @@
 import pyautogui
+# import cv2
 
-location = pyautogui.locateCenterOnScreen("lol_start.png")
-pyautogui.click(location)
+contents = "wr"
 
 while True:
-    location = pyautogui.locateCenterOnScreen("game_start.png")
-    if type(location) != type(None):
-        pyautogui.click(location)
-        break
-while True:
-    location = pyautogui.locateCenterOnScreen("ok_btn.png")
-    if type(location) != type(None):
-        pyautogui.click(location)
-        pyautogui.click(location[0],location[1]-100)
-        break
-while True:
-    location = pyautogui.locateCenterOnScreen("search_btn.png")
-    if type(location) != type(None):
-        pyautogui.click(location)
-        break
-while True:
-    location = pyautogui.locateCenterOnScreen("surak_btn.png")
-    if type(location) != type(None):
-        pyautogui.click(location)
-        break
+    # chat
+    while True:
+        location = pyautogui.locateCenterOnScreen("images/chat_window.png")
+        if type(location) != type(None):
+            break
+    pyautogui.click(location)
+    for i in range(10):
+        pyautogui.write(contents)
+        pyautogui.press("enter")
 
-# print(location)
-# while True:
-#     location = pyautogui.locateCenterOnScreen("lol_start.png")
-#     print(location)
-    # if type(location) != type(None):
-    #     pyautogui.click(location)
-    
+    # elise
+    while True:
+        location = pyautogui.locateCenterOnScreen("images/elise_icon.png")
+        if type(location) != type(None):
+            break
+    pyautogui.click(location)
 
+    # ready
+    while True:
+        location = pyautogui.locateCenterOnScreen("images/ready_button.png")
+        if type(location) != type(None):
+            break
+    pyautogui.click(location)
