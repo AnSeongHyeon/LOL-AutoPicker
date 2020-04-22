@@ -1,4 +1,6 @@
 import pyautogui
+import time
+import cv2
 
 location = None
 position = input("Please enter the position you want: ")
@@ -9,10 +11,10 @@ if len(position) > 10 and len(champion) >10:
     exit(1)
 
 while True:
-
     # champion
     while True:
-        location = pyautogui.locateCenterOnScreen("images/champion/"+champion+".png")
+        location = pyautogui.locateCenterOnScreen("images/champion/"+champion+".png",confidence=0.9)
+        time.sleep(0.1)
         if location is not None:
             break
     pyautogui.click(location)
