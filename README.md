@@ -11,5 +11,5 @@
 2. 롤 클라이언트를 실행한다.
 3. 게임을한다.
 ## **실행파일 다운로드**
-- version 1.0 [링크](exe/exam1.exe)
-- version 1.1 [링크](exe/exam2.exe)
+- version 1.0 [링크](executable/exam1.exe)
+- version 1.1 [링크](executable/exam2.exe)
